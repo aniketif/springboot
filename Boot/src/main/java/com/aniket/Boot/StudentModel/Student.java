@@ -11,6 +11,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+
 @Entity
 @Table
 public class Student 
@@ -30,6 +31,7 @@ public class Student
 	private String name;
 	private String email;
 	
+
 	@Transient
 	private Integer age;
 	private LocalDate dob;
@@ -66,6 +68,7 @@ public class Student
 	}
 
 	public void setName(String name) {
+		System.out.println("name updated");
 		this.name = name;
 	}
 

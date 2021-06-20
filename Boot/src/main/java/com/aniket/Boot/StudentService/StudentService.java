@@ -35,7 +35,6 @@ public class StudentService {
 		{
 			throw new IllegalStateException("Email Already Taken");
 		}
-		System.out.println(student);
 		studentRepo.save(student);
 	}
 	
